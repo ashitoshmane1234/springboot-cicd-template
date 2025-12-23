@@ -1,8 +1,7 @@
 package com.ashitosh.cicd.demo;
 
 public class DemoService {
-    public void unsafeMethod() {
-        String password = "123456";  // Sonar will flag hardcoded credentials
+    public void safeMethod(String password) {  // Remove hardcoded password
         System.out.println(password);
     }
 }
